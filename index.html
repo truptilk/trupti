@@ -127,14 +127,7 @@
 		  text-align: left;
 		}
 
-		/* Number text (1/3 etc) */
-		.numbertext {
-		  color: black;
-		  font-size: 12px;
-		  padding: 8px 12px;
-		  position: absolute;
-		  top: 0;
-		}
+
 
 		/* The dots/bullets/indicators */
 		.dot {
@@ -228,7 +221,7 @@
 			width: 100%;
 		  }
 		}
-		
+
 	</style>
 </head>
 
@@ -253,21 +246,21 @@
 				<div class="slideshow-container">
 
 					<div class="mySlides fade">
-					  <div class="numbertext">1 / 3</div>
+
 					  <img src="images\img1.JPG" height="400px">
 					  <div class="text"><span style="background-color: blue">Sampler style for Arcgis Pro</span></div>
 
 					</div>
 
 					<div class="mySlides fade">
-					  <div class="numbertext">2 / 3</div>
+
 					  <img src="images\img2.jpg" height="400px">
 					  <div class="text"><span style="background-color: blue">GEOG 579 Coursework</span></div>
 
 					</div>
 
 					<div class="mySlides fade">
-					  <div class="numbertext">3 / 3</div>
+
 					  <img src="images\img3.jpg" height="400px">
 					  <div class="text"><span style="background-color: blue">GEOG 579 Coursework</span></div>
 					</div>
@@ -300,8 +293,12 @@
 				  var i;
 				  var slides = document.getElementsByClassName("mySlides");
 				  var dots = document.getElementsByClassName("dot");
-				  if (n > slides.length) {slideIndex = 1}
-				  if (n < 1) {slideIndex = slides.length}
+				  if (n > slides.length) {
+						slideIndex = 1;
+					}
+				  if (n < 1) {
+						slideIndex = slides.length;
+					}
 				  for (i = 0; i < slides.length; i++) {
 					  slides[i].style.display = "none";
 				  }
